@@ -10,5 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: "after moving files"
-        run: ls 
+      
+      - name: "login dockerhub"
+        run: docker login --username nadaadel19 --password dckr_pat_Nm4G6GpmGrVd2fhfTU4Ph1GE8ho
+        
