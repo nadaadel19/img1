@@ -9,5 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: "list files"
-        run: ls
+      - uses: actions/checkout@v3
+      - name: "after moving files"
+        run: ls 
