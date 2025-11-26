@@ -1,1 +1,13 @@
+on:
+  push:
+    branchs:
+      - master
+    
 
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+    steps:
+      - name: "test github"
+        run: echo hello
